@@ -1,5 +1,6 @@
 import reactImage from "./assets/react-core-concepts.png";
-import componentsImage from "./assets/components.png";
+// import componentsImage from "./assets/components.png";
+import { CORE_CONCEPTS } from "./data";
 
 
 // random content generator

@@ -3,6 +3,7 @@ import propsImage from "./assets/config.png";
 import jsxImage from "./assets/jsx-ui.png";
 import stateImage from "./assets/state-mgmt.png";
 
+// this is a named export so when you import it you must use import {CORE_CONCEPTS}
 export const CORE_CONCEPTS = [
     {
         image: componentImage,
