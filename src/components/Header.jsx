@@ -1,5 +1,5 @@
 import reactImage from "../assets/react-core-concepts.png";
-
+import "./Header.css"
 // random content generator
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
