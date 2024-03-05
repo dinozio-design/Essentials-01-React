@@ -1,11 +1,11 @@
-
+import "./CoreConcept.css";
 /** this code works but it is not so clean 
 function CoreConcept(props) {
   return (
     <li>
       <img src={props.image} alt={props.title} />
       <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      <p>{props.description}</p>`
     </li>
   );
 }
