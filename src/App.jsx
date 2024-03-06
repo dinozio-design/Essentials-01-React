@@ -4,9 +4,9 @@ import TabButton from "./components/TabButton";
 import { CORE_CONCEPTS } from "./data";
 
 function App() {
-  function handleClick(){
-    console.log(`I have been clicked 👌`)
-}
+  function handleClick(selectedButton) {
+    console.log(`${selectedButton} has been clicked 👌`)
+  }
 
   return (
     <div>
@@ -22,7 +22,7 @@ function App() {
               image={CORE_CONCEPTS[0].image}
             />
             {/* here is a better and cleaner way of using the props, ONLY if the key value pairs used in the props are exactly the same and the key value pairs in the data object */}
-            <CoreConcept {...CORE_CONCEPTS[1]}/>
+            <CoreConcept {...CORE_CONCEPTS[1]} />
             <CoreConcept {...CORE_CONCEPTS[2]} />
             <CoreConcept {...CORE_CONCEPTS[3]} />
           </ul>
@@ -30,11 +30,12 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={handleClick}>Component</TabButton>
-            <TabButton onSelect={handleClick}>JSX</TabButton>
-            <TabButton onSelect={handleClick}>Props</TabButton>
-            <TabButton onSelect={handleClick}>State</TabButton>
+            <TabButton onSelect={() => handleClick("components")}>Component</TabButton>
+            <TabButton onSelect={() => handleClick("jsx")}>JSX</TabButton>
+            <TabButton onSelect={() => handleClick("props")}>Props</TabButton>
+            <TabButton onSelect={() => handleClick("state")}>State</TabButton>
           </menu>
+
         </section>
       </main>
     </div>
