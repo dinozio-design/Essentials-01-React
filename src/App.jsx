@@ -43,7 +43,6 @@ function App() {
             {!tabContent ? <p>Please select a topic!</p> : ( <> <h3>{EXAMPLES[tabContent].title}</h3>
             <p>{EXAMPLES[tabContent].description}</p>
             <code>{EXAMPLES[tabContent].code}</code></>)}
-          
           </div>
         </section>
       </main>
