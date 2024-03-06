@@ -42,7 +42,7 @@ function App() {
           <div id="tab-content">
             {!tabContent ? <p>Please select a topic!</p> : ( <> <h3>{EXAMPLES[tabContent].title}</h3>
             <p>{EXAMPLES[tabContent].description}</p>
-            <code>{EXAMPLES[tabContent].code}</code></>)}
+            <pre>{EXAMPLES[tabContent].code}</pre></>)}
           </div>
         </section>
       </main>
