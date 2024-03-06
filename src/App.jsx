@@ -8,7 +8,7 @@ function App() {
   const [tabContent, setTabContent] = useState();
   function handleClick(selectedButton) {
     console.log(`${selectedButton} has been clicked 👌`);
-    setTabContent (selectedButton);
+    setTabContent(selectedButton);
   }
 
   return (
@@ -40,9 +40,11 @@ function App() {
           </menu>
           {/* {tabContent} */}
           <div id="tab-content">
-            {!tabContent ? <p>Please select a topic!</p> : ( <> <h3>{EXAMPLES[tabContent].title}</h3>
-            <p>{EXAMPLES[tabContent].description}</p>
-            <pre>{EXAMPLES[tabContent].code}</pre></>)}
+            {!tabContent ? <p>Please select a topic!</p> : (<> <h3>{EXAMPLES[tabContent].title}</h3>
+              <p>{EXAMPLES[tabContent].description}</p>
+              <pre>
+                <code>{EXAMPLES[tabContent].code}</code>
+              </pre></>)}
           </div>
         </section>
       </main>
