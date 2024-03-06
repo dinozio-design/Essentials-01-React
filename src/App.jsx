@@ -1,16 +1,14 @@
-import { useState } from "react";
+import { Component, useState } from "react";
 import Header from "./components/Header";
 import CoreConcept from "./components/CoreConcept";
 import TabButton from "./components/TabButton";
-import { CORE_CONCEPTS } from "./data";
+import { CORE_CONCEPTS, EXAMPLES } from "./data";
 
 function App() {
-  const [tabContent, setTabContent] = useState("Please select a button ✔");
-  // let tabContent = "Please select a button ✔";
-
+  const [tabContent, setTabContent] = useState("components");
   function handleClick(selectedButton) {
     console.log(`${selectedButton} has been clicked 👌`);
-    setTabContent (`${selectedButton} has been clicked 👌`);
+    setTabContent (selectedButton);
   }
 
   return (
@@ -42,9 +40,9 @@ function App() {
           </menu>
           {/* {tabContent} */}
           <div id="tab-content">
-            <h3>Title</h3>
-            <p>Description</p>
-            <code>Nested code</code>
+            <h3>{EXAMPLES[tabContent].title}</h3>
+            <p>{EXAMPLES[tabContent].description}</p>
+            <code>{EXAMPLES[tabContent].code}</code>
           </div>
         </section>
       </main>
