@@ -33,10 +33,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleClick("components")}>Component</TabButton>
-            <TabButton onSelect={() => handleClick("jsx")}>JSX</TabButton>
-            <TabButton onSelect={() => handleClick("props")}>Props</TabButton>
-            <TabButton onSelect={() => handleClick("state")}>State</TabButton>
+            <TabButton isSelected={tabContent === "components"} onSelect={() => handleClick("components")}>Component</TabButton>
+            <TabButton isSelected={tabContent === "jsx"} onSelect={() => handleClick("jsx")}>JSX</TabButton>
+            <TabButton isSelected={tabContent === "props"} onSelect={() => handleClick("props")}>Props</TabButton>
+            <TabButton isSelected={tabContent === "state"} onSelect={() => handleClick("state")}>State</TabButton>
           </menu>
           {/* {tabContent} */}
           <div id="tab-content">
