@@ -5,7 +5,7 @@ import TabButton from "./components/TabButton";
 import { CORE_CONCEPTS, EXAMPLES } from "./data";
 
 function App() {
-  const [tabContent, setTabContent] = useState("components");
+  const [tabContent, setTabContent] = useState();
   function handleClick(selectedButton) {
     console.log(`${selectedButton} has been clicked 👌`);
     setTabContent (selectedButton);
@@ -40,9 +40,10 @@ function App() {
           </menu>
           {/* {tabContent} */}
           <div id="tab-content">
-            <h3>{EXAMPLES[tabContent].title}</h3>
+            {!tabContent ? <p>Please select a topic!</p> : ( <> <h3>{EXAMPLES[tabContent].title}</h3>
             <p>{EXAMPLES[tabContent].description}</p>
-            <code>{EXAMPLES[tabContent].code}</code>
+            <code>{EXAMPLES[tabContent].code}</code></>)}
+          
           </div>
         </section>
       </main>
