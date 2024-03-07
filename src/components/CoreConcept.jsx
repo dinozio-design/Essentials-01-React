@@ -9,8 +9,7 @@ function CoreConcept(props) {
     </li>
   );
 }
-*/
-/** here is a cleaner version of the code using object destructuring */
+here is a cleaner version of the code using object destructuring */
 export default function CoreConcept({image, title, description}) {
     return (
       <li>

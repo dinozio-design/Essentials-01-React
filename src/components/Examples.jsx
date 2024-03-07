@@ -17,25 +17,25 @@ export default function Examples() {
             <menu>
                 <TabButton
                     isSelected={tabContent === "components"}
-                    onSelect={() => handleClick("components")}
+                    onClick={() => handleClick("components")}
                 >
                     Component
                 </TabButton>
                 <TabButton
                     isSelected={tabContent === "jsx"}
-                    onSelect={() => handleClick("jsx")}
+                    onClick={() => handleClick("jsx")}
                 >
                     JSX
                 </TabButton>
                 <TabButton
                     isSelected={tabContent === "props"}
-                    onSelect={() => handleClick("props")}
+                    onClick={() => handleClick("props")}
                 >
                     Props
                 </TabButton>
                 <TabButton
                     isSelected={tabContent === "state"}
-                    onSelect={() => handleClick("state")}
+                    onClick={() => handleClick("state")}
                 >
                     State
                 </TabButton>
