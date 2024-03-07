@@ -1,6 +1,6 @@
 import Header from "./components/Header";
-import CoreCocepts from "./CoreConcepts";
-import Examples from "./components/Examples";
+import CoreCocepts from "./components/CoreConcepts.jsx";
+import Examples from "./components/Examples.jsx";
 
 
 
