@@ -1,9 +1,10 @@
-import CoreConcept from "./CoreConcept";
+import CoreConcept from "./CoreConcept.jsx";
+import Section from "./Section.jsx";
 import { CORE_CONCEPTS } from "../data";
+
 export default function CoreCocepts(){
     return(
-        <section id="core-concepts">
-        <h2>Core Concepts </h2>
+        <Section title={"Core Concepts"} id={"core-concepts"} >
         <ul>
          {/* Cleaning it up and making it more dynamic with the help of map() function
           <CoreConcept
@@ -21,6 +22,6 @@ export default function CoreCocepts(){
            <CoreConcept key={conceptItem.title} {...conceptItem} />
            ))}
         </ul>
-      </section>
+      </Section>
     );
 }
